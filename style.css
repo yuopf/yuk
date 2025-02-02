@@ -1,0 +1,423 @@
+html, body{
+    width: 100%;
+    font-family: 'Jura', sans-serif;
+
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url(static/fonts/Jura-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+p{
+    font-size: 20px;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+    
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.header{
+    height: 80px;
+    margin: 0;
+    padding: 0 auto;
+    background-color: darkseagreen;
+}
+
+.logo__img{
+    object-fit: cover;
+    width: 60px;
+    height: 60px;
+}
+.nav__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    position: relative;
+    left: 50px;    
+}
+
+.nav__item{
+    font-size: 18px;
+}
+
+.reg__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.about__title{
+    padding: 50px 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.title{
+    padding: 50px 10px;
+    text-align: center;
+}
+
+.about__logo{
+    width: 200px;
+    width: 200px;
+}
+
+.slogan__h2{
+    object-fit: cover;
+}
+
+.slogan__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.description{
+   padding: 20px 0;
+}
+
+.advantages__container{
+    display: flex;
+}
+
+.advantages__title{
+    text-align: center;
+}
+
+.advantages__container-container{
+    padding-top: 30px ;
+    display: flex;
+}
+
+.advantages__container{
+    display: flex;
+}
+
+.slot{
+    padding: 50px auto;
+    display: flex;
+
+}
+
+.slider__title{
+    text-align: center;
+    padding: 50px;
+}
+
+.slider__container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    width: 300px;
+    margin-bottom: 50px;
+}
+
+.slide {
+    flex: none;
+    scroll-snap-align: start;
+    width: 300px;
+    text-align: center;
+  }  
+
+.footer__container{
+    padding: 50px ;
+}
+
+.footer__text{
+    padding: 50px auto;
+}
+
+/* renovation.html */
+
+.price__text{
+    margin-bottom: 50px;
+}
+
+.renovation__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 350px;
+    padding: 40px;
+}
+
+.d__text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* found.html */
+
+.found__text{
+    padding: 0 50px;
+}
+
+
+.maps{
+    width: 700px;
+    height: 400px;
+    padding: 0 100px;
+}
+
+/* registr.html */
+
+.registration__account{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+ }
+
+ .label-form{
+    font-size: 20px;
+ }
+
+ .input-form{
+    border: 2px gold;
+    background-color: #94d894;
+    border-radius: 5px;
+    width: 400px;
+    height: 40px;
+    border-width: 5px black;
+ }
+
+ .div-registration{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 8px;
+ }
+
+ .checkbox{
+    padding: 10px;
+ }
+
+ .button-reg{
+    width: 200px;
+    height: 50px;
+    background-color:  #8fbc8f;
+    border-radius: 10px;
+    font-family: 'Jura';
+    font-size: 18px;
+    position: relative;
+    left: 100px;
+ }
+
+ /* vhod.html */
+
+ .vhod__account{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+ }
+ .button-reg1{
+    background-color: #8fbc8f;
+    height: 50px;
+    border-radius: 10px;
+    font-family: 'Jura';
+    font-size: 18px;
+    width: 100px;
+ }
+ .voyti{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+ }
+
+ /* adaptive */
+
+ @media (max-widht: 1024px)  {
+    body{
+        font-size: 15px;
+    }
+    
+    .container{
+        width: 90%;
+        padding: 15px;
+    }
+ }
+
+ @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+
+    .container {
+      width: 95%;
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 320px) {
+    body {
+      font-size: 12px;
+    }
+
+    .container {
+      width: 100%;
+      padding: 5px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .header__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .calculator__container {
+        max-width: 90%;
+    }
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 600px) {
+    .header__container {
+        padding: 10px;
+    }
+
+    .logo__img {
+        max-width: 120px;
+    }
+
+    .nav__list {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .calculator__container {
+        padding: 15px;
+    }
+
+    .room-parameters, .options, .lighting, .window-design {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input {
+        width: 100%;
+        text-align: left;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+  /* gallery.html */
+
+  .gallery__title{
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .card{
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: white;
+    text-align: center;
+  }
+
+  .card img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .gallery__container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 20px;
+  }
+
+
+
+  /* calculator.html */
+
+ h2{
+    padding: 20px;
+ }
+
+  .calculator__title{
+    padding-top: 20px;
+}
+
+.room-parameters, .options, .lighting, .window-design {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+input {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+button {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button.selected {
+    background: #8fbc8f;
+    color: white;
+    border-color: #8fbc8f;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-align: right;
+}
