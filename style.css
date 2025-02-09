@@ -212,19 +212,21 @@ p{
     padding: 8px;
  }
 
- .checkbox{
-    padding: 10px;
- }
+.checkbox{
+    display: flex;
+    margin: 10px;
+}
 
  .button-reg{
     width: 200px;
     height: 50px;
-    background-color:  #8fbc8f;
+    background-color: #8fbc8f;
     border-radius: 10px;
     font-family: 'Jura';
     font-size: 18px;
     position: relative;
     left: 100px;
+    margin-bottom: 50px;
  }
 
  /* vhod.html */
