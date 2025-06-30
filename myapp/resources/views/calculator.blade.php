@@ -70,9 +70,21 @@
         <h3>Цена уставки потолка</h3>
         <div class="total" id="totalPrice">3 045 ₽</div>
     </div>
-</div>
 
- 
+    @if (Auth::check())
+        <a href="#" class="btn btn-primary">Заказать</a>
+    @else
+        <!-- Кнопка вызывает модалку -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#authModal">
+            Заказать
+        </button>
+    @endif
+
+
+</div> 
+
+<!-- Модалка ебалка -->
+<x-auth-modal />
 
 <script src="{{ asset('calculator.js') }}"></script>
 
